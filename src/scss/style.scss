@@ -1,0 +1,135 @@
+
+.wrapper{
+    color: white;
+    max-width: 1200px;
+    width:calc(100vw - 50px);
+    height: 100vh;
+    h2{
+        font-family: 'Aeonik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .top{
+        font-family: 'Aeonik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 31px;
+        margin-bottom: 81px;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        margin: 82px;
+    }
+    button{
+        cursor: pointer;
+        padding: 17px 62px;
+        background: #3775ED;
+        border-radius: 5px;
+        border: none;
+        font-family: 'Aeonik';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        box-shadow:10px 10px 15px 0px rgba(0, 0, 0, 0.838);
+        transition: all .4s linear ;
+    }
+    button:hover{
+        background-color: #bd00f7;
+        box-shadow: 0px 0px 0px 0px #00000000;
+    }
+.images{
+    width: 100%;
+    display: grid;
+    grid-gap: 28px 20px;
+    grid-template-columns: repeat(auto-fit, 284px);
+    justify-content: center;
+.images1{
+    width: 282px;
+    height: 304px;
+    display: grid;
+    align-items: end;
+}
+.down_drop{
+    width: 283px;
+    height: 75px;
+    background: rgba(9, 7, 7, 0.4);
+    backdrop-filter: blur(25px);
+    border-radius: 0px 0px 5px 5px;
+   .names{
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 9px 0px 0px 20px;
+   } 
+   .p-text{
+    font-family: 'Aeonik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 5px 0px 0px 20px;
+   }
+   .p-text-1::after {
+    content: url("../img/Vector.png");
+    position: relative;
+    top: 7px;
+    left: 77px;
+}
+.p-text-2::after {
+    content: url("../img/Vector.png");
+    position: relative;
+    top: 7px;
+    left: 89px;
+}
+.p-text-4::after {
+    content: url("../img/Vector.png");
+    position: relative;
+    top: 7px;
+    left: 96px;
+}
+.p-text-6::after {
+    content: url("../img/Vector.png");
+    position: relative;
+    top: 7px;
+    left: 77px;
+}
+}
+}
+}
+@for $i from 1 through 6 {
+    .images-#{$i} {
+        background-image: url("../img/#{$i}.png");
+    } 
+}
+@for $n from 1 through 6 {
+    .p-text-#{$n}::before {
+        content: url("../img/#{$n}.before.png");
+        position: relative;
+        top: 5px;
+        left: -4px;
+    }
+}
+@for $n from 1 through 6 {
+    .p-text-#{$n}::after {
+        content: url("../img/Vector.png");
+        position: relative;
+        top: 7px;
+        left: 84px;
+    }
+}
+@media screen and (max-width:651px) {
+    h2{
+        text-align: center;
+    }
+    .top{
+        text-align: center;
+    }
+}
