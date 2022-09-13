@@ -6,8 +6,4 @@
 
 .selector {
   color: red;
-
-  @include respond-to("small") {
-    color: blue;
-  }
 }

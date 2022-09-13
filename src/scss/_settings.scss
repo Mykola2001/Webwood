@@ -7,11 +7,3 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
-.page {
-  height: 100%;
-  font-family: var(--font-family, sans-serif);
-  background: #242958;
-  display: flex;
-  justify-content: center;
-}
